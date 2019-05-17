@@ -67,3 +67,5 @@ TBI: Namespace, using, Program.cs
 ## Credits and Citations
 
 ### Citations
+
+- [1](https://softwareengineering.stackexchange.com/a/221897) - Arrays versus Lists.
