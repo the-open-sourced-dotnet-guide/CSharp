@@ -33,9 +33,8 @@ The Basics of C# using version 8.0.
 
 ## The structure of a C# file using HelloWorld.cs as an example
 
-All C# files have the extension CS. For example `Program.cs` in the ["Hello, World"](http://www.foo.com) example.
+All C# files have the extension CS. Here is an example "Hello, World" program that's used across many languages. It's very simple and the goal is to provide something simple across all languages to get a quick and dirty feel about what the language is like.
 
-TODO: Namspace (Your project and referencing), Program.cs, Main() method, parameters
 ```c#
 using System;
 
@@ -51,21 +50,21 @@ namespace MyFirstProject
 }
 ```
 
-Going from top to bottom, the first thing we see is we are using the `System` namespace. You can read more about it [here]("https://docs.microsoft.com/en-us/dotnet/api/system?view=netcore-3.0").
+- Going from top to bottom, the first thing we see is we are using the `System` namespace. You can read more about it [here]("https://docs.microsoft.com/en-us/dotnet/api/system?view=netcore-3.0").
 
-Specifically we need it for `Console` and more information on that can be found [here]("https://docs.microsoft.com/en-us/dotnet/api/system.console?view=netcore-3.0"). It's wise to learn how to read the documentation and get used to it but it will be overwhelming at first.
+- Specifically we need it for `Console` and more information on that can be found [here]("https://docs.microsoft.com/en-us/dotnet/api/system.console?view=netcore-3.0"). It's wise to learn how to read the documentation and get used to it but it will be overwhelming at first.
 
-Next we see the class `Program` which is the primary entry point that the compiler knows where to start.
+- Next we see the class `Program` which is the primary entry point that the compiler knows where to start.
 
-Next up to bat we see `static void Main(string[] args)`. That's the entry method of the application. A `method` is a contained set of instructions you can call on. An example of one might be `GetEyeColor()`. You can also pass in argumnts. In the instance above those come from the console. the `string[]` is a list of all of those and can be safely ignored (and you can even delete the `string[] args` bit while keeping the parenthesis). The return type is `void` meaning it doesn't return anything when the program closes or to anything else. Sometimes you'll return an error code or a success code if you're writing scripts that utilize several programs.
+- Next up to bat we see `static void Main(string[] args)`. That's the entry method of the application. A `method` is a contained set of instructions you can call on. An example of one might be `GetEyeColor()`. You can also pass in argumnts. In the instance above those come from the console. the `string[]` is a list of all of those and can be safely ignored (and you can even delete the `string[] args` bit while keeping the parenthesis). The return type is `void` meaning it doesn't return anything when the program closes or to anything else. Sometimes you'll return an error code or a success code if you're writing scripts that utilize several programs.
 
-Last up we see `Console.WriteLine("Hello, World!");` and this is what we're most interested in. When you run this -- this is, obviously, what spits out "Hello, World!" to the console.
+- Last up we see `Console.WriteLine("Hello, World!");` and this is what we're most interested in. When you run this -- this is, obviously, what spits out "Hello, World!" to the console.
 
 ## Keywords
 
 ## Datatypes
 
-When programmers say datatype they generally mean what kind of data can the variable handle. For example `bool isFemale = false;`
+When programmers say datatype they generally mean what kind of data can the variable handle. For example `bool isFemale = false;` should be obvious that they are not female. In C# it is strongly recommended to use variable names that are similar to natural language to that it is clearly communicated what it is for. For `boolean` variables they are usually prefixed with 'is' or 'has' or something similar. The goal is to communicate so choose whatever communicates the best. There's a good change that in the future you'll forget what you were doing and your own code will save you or frustrate you.
 
 There are two kinds of variables. [value and reference types]("#By Value and By Reference Types").
 
